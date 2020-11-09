@@ -1,17 +1,11 @@
-# Optimisticly Locking Your Spring Boot Services
-This project details two ways you can optimisticly lock you web services.
+# Basic ATM APP
 
-1. With built in mechanisms provided by the JPA specification and the Hibernate provider.
-2. With a custom annotation and annotation processor for cases where your ORM does not support optimistic locking.  In our case we're using Spring JDBC.
-
-Start up your Spring Boot app by running the `server.sh` file.
-During startup, Spring Boot will initialize an in memory database and create our products table for us.  It will also insert a record for us to work with.
+Functionality - 
+  1. Open new Account with zero balance with basic details like name and pan card number.[/openAcc/{name}/{pan}]
+  2. Depoit cash in your account.[/deposit/{accNum}/{amount}]
+  3. Withdraw cash from your account.[/withdraw/{accNum}/{amount}].
+  4. Check balance for your account.[/checkBal/{acc}]
 
 ## Database console access
-The database can be accessed through the browser at [http://localhost:8080/h2-console](http://localhost:8080/h2-console).  No password necessary.  This database serves both the JPA and JDBC examples.
+The database can be accessed through the browser at [http://localhost:8080/h2-console](http://localhost:8080/h2-console).  No password necessary.  
 
-## Running the JPA based example
-To run the JPA example, execute `scripts/test-jpa.py`
-
-## Running the JDBC based example
-To run the JPA example, execute `scripts/test-jdbc.py`
