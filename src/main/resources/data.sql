@@ -1,0 +1,2 @@
+insert into account(ACCOUNT_NUMBER, BALANcE, CREATE_DATE, NAME, VERSION) values(1, 100.0, sysdate, 'a', 1);
+insert into account(ACCOUNT_NUMBER, BALANcE, CREATE_DATE, NAME, VERSION) values(2, 100.0, sysdate, 'a', 1);
